@@ -1,0 +1,34 @@
+$colorText: #000000;
+$backgroundMiddle: "https://cdn.discordapp.com/attachments/616606511745204246/776101375578341376/cd9bfb2c29514b781b3accc6553eee5f.jpg";
+
+.headerTicker p {
+  font-size: 20px;
+  padding-left: 10px;
+}
+
+.tickerIndexHeader {
+  text-align: center;
+  margin-top: -70px;
+  padding-bottom: 30px;
+
+}
+
+.tickerIndexHeader p{
+  display: inline;
+  padding-left: 25px;
+
+}
+
+.logoText p{
+  padding-left: 20px;
+  padding-top: 20px;
+  font-size: 20px;
+  color: $colorText;
+}
+.backgroundMiddle {
+  //padding-bottom: 30px;
+  background-image: url($backgroundMiddle);
+  height: 500px;
+}
+
+
