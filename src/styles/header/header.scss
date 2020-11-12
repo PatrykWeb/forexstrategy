@@ -1,5 +1,8 @@
 $colorText: #ffffff;
 $backgroundMiddle: "https://cdn.discordapp.com/attachments/616606511745204246/776101375578341376/cd9bfb2c29514b781b3accc6553eee5f.jpg";
+$backgroundProfit: #d6ffef;
+$colorProfit: #2ecc71;
+
 
 .headerTicker p {
   font-size: 20px;
@@ -10,14 +13,21 @@ $backgroundMiddle: "https://cdn.discordapp.com/attachments/616606511745204246/77
   text-align: center;
   margin-top: -70px;
   padding-bottom: 30px;
-
 }
 
 .tickerIndexHeader p{
   display: inline;
   padding-left: 25px;
-  font-weight: 600;
+  font-weight: 400;
+  color: #2ecc71;
+  //background-color: $backgroundProfit;
+}
+.tickerIndexHeader span {
+  background-color: $backgroundProfit;
+}
 
+.logoHeader {
+  position: absolute;
 }
 
 .logoText {
@@ -26,16 +36,20 @@ $backgroundMiddle: "https://cdn.discordapp.com/attachments/616606511745204246/77
   padding-right: 10px;
   border-radius: 30px;
   width: 200px;
-  background-color: black;
+  //background-color: black;
   height: 50px;
 }
 
 .logoText p{
   padding-top: 13px;
   font-size: 20px;
-  color: $colorText;
+  color: black;
   text-align: center;
-
+  font-weight: 400;
+}
+.logoText span {
+  font-weight: 900;
+  color: #a59708
 }
 .backgroundMiddle {
   //padding-bottom: 30px;

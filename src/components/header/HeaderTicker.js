@@ -10,18 +10,28 @@ const HeaderTicker = () => {
                 params: {
                     number: `${dataGraph}`
                 }
-            }).then(response => console.log(setGraph(response.data.number)))
+            }).then(response => setGraph(response.data.number))
         }, 5000);
+        return() => {
+            clearInterval(result);
+        }
     });
+    const checkProfit = () => {
+        return {
+            color: (dataGraph > 0) ? "#2ecc71" : "red"
+        }
+    }
+
     return(
         <div className={"tickerContainer"}>
             <header className={"headerTicker"}>
-                <div className={"logoText"}><p>your<b>investing</b>strategy</p></div>
+                <div className={"logoText"}><p>your<span>investing</span>strategy</p></div>
+                <div className={"logoHeader"}><img src={"https://cdn.discordapp.com/attachments/616606511745204246/776428431184494592/bull.png"}/></div>
                 <div className={"tickerIndexHeader"}>
-                    <p>S&P <span>${dataGraph}</span><img src={"https://media.discordapp.net/attachments/616606511745204246/776159152148971590/down-arrow_green.png"}/></p>
-                    <p>DE30 <span>4.21%</span></p>
-                    <p>USTEC <span>-2%</span><img src={"https://cdn.discordapp.com/attachments/616606511745204246/776159432849621042/down-arrow.png"}/></p>
-                    <p>DJ30 <span>3%</span></p>
+                    <p><span style={checkProfit()} className={"sp500"}>S&P {dataGraph}%</span></p>
+                    <p><span>DE30 4.21%</span></p>
+                    <p><span>USTEC -2%</span></p>
+                    <p><span>DJ30 3%</span></p>
                 </div>
             </header>
             <section className={"backgroundMiddle"}>
