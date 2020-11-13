@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import Axios from "axios";
+import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom"
 
 
 const HeaderTicker = () => {
@@ -16,9 +17,11 @@ const HeaderTicker = () => {
             clearInterval(result);
         }
     });
+
     const checkProfit = () => {
         return {
-            color: (dataGraph > 0) ? "#2ecc71" : "red"
+            color: (dataGraph > 0) ? "#2ecc71" : "#e74c3c",
+            backgroundColor: (dataGraph > 0) ? "#d6ffef" : "#ffdede"
         }
     }
 
@@ -29,10 +32,20 @@ const HeaderTicker = () => {
                 <div className={"logoHeader"}><img src={"https://cdn.discordapp.com/attachments/616606511745204246/776428431184494592/bull.png"}/></div>
                 <div className={"tickerIndexHeader"}>
                     <p><span style={checkProfit()} className={"sp500"}>S&P {dataGraph}%</span></p>
-                    <p><span>DE30 4.21%</span></p>
-                    <p><span>USTEC -2%</span></p>
-                    <p><span>DJ30 3%</span></p>
+                    <p><span style={checkProfit()}>DE30 {dataGraph}%</span></p>
+                    <p><span style={checkProfit()}>USTEC {dataGraph}%</span></p>
+                    <p><span style={checkProfit()}>DJ30 {dataGraph}%</span></p>
+                    <Router>
+                        <div className={"routersContainer"}>
+                            <ul>
+                                <li>
+                                    <Link to={"/aboutus"}>About us</Link>
+                                </li>
+                            </ul>
+                        </div>
+                    </Router>
                 </div>
+
             </header>
             <section className={"backgroundMiddle"}>
 

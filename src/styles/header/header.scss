@@ -10,8 +10,9 @@ $colorProfit: #2ecc71;
 }
 
 .tickerIndexHeader {
-  text-align: center;
+  text-align: left;
   margin-top: -70px;
+  padding-left: 250px;
   padding-bottom: 30px;
 }
 
@@ -20,10 +21,16 @@ $colorProfit: #2ecc71;
   padding-left: 25px;
   font-weight: 400;
   color: #2ecc71;
-  //background-color: $backgroundProfit;
 }
 .tickerIndexHeader span {
   background-color: $backgroundProfit;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.logoHeader {
+  margin-top: -45px;
+  margin-left: 105px;
 }
 
 .logoHeader {
@@ -36,12 +43,10 @@ $colorProfit: #2ecc71;
   padding-right: 10px;
   border-radius: 30px;
   width: 200px;
-  //background-color: black;
   height: 50px;
 }
 
 .logoText p{
-  padding-top: 13px;
   font-size: 20px;
   color: black;
   text-align: center;
@@ -52,8 +57,6 @@ $colorProfit: #2ecc71;
   color: #a59708
 }
 .backgroundMiddle {
-  //padding-bottom: 30px;
-  background-image: url($backgroundMiddle);
   height: 500px;
 }
 

@@ -6,7 +6,6 @@ function Main() {
   return (
     <div className="App">
         <HeaderTicker/>
-        <h1>Ts</h1>
     </div>
   );
 }
