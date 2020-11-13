@@ -60,4 +60,22 @@ $colorProfit: #2ecc71;
   height: 500px;
 }
 
+nav li{
+  list-style: none;
+  display: inline;
+  padding-left: 30px;
+  font-size: 20px;
+  font-weight: 400;
+}
 
+nav {
+  margin-top: -110px;
+  text-align: right;
+  margin-right: 50px;
+}
+.whatsInvestingNav {
+  color: #a59708;
+  background-color: white !important;
+  padding: 0 !important;
+  font-weight: 900;
+}
