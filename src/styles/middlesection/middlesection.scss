@@ -13,9 +13,9 @@ $candlesWidth: 20px;
 }
 
 .candlesFirst {
-  height: 100px;
-  margin-top: 180px;
-  margin-left: 50px;
+  height: 70px;
+  margin-top: 200px;
+  margin-left: 30px;
   width: 20px;
   background-color: $candlesProfit;
   //text-align: right;
@@ -24,27 +24,62 @@ $candlesWidth: 20px;
   height: 70px;
   width: $candlesWidth;
   background-color: $candlesProfit;
-  margin-left: 75px;
-  margin-top: -160px;
+  margin-left: 55px;
+  margin-top: -125px;
 }
 .candlesThree {
-  height: 60px;
+  height: 80px;
   width: $candlesWidth;
   background-color: $candlesLoss;
-  margin-left: 100px;
+  margin-left: 80px;
   margin-top: -50px;
 }
 .candlesFour {
   height: 60px;
   width: $candlesWidth;
-  background-color: $candlesProfit;
-  margin-left: 125px;
-  margin-top: -88px;
+  background-color: $candlesLoss;
+  margin-left: 105px;
+  margin-top: -70px;
 }
 .candlesFive {
-  height: 58px;
+  height: 70px;
+  width: $candlesWidth;
+  background-color: $candlesProfit;
+  margin-left: 130px;
+  margin-top: -80px;
+}
+.candlesSeven {
+  height: 50px;
   width: $candlesWidth;
   background-color: $candlesLoss;
-  margin-left: 150px;
-  margin-top: -32px;
+  margin-left: 155px;
+  margin-top: -20px;
+}
+.candlesEight {
+  height: 80px;
+  width: $candlesWidth;
+  background-color: $candlesProfit;
+  margin-left: 180px;
+  margin-top: -120px;
+}
+.candlesNine {
+  height: 80px;
+  width: $candlesWidth;
+  background-color: $candlesProfit;
+  margin-left: 205px;
+  margin-top: -130px;
+}
+.candlesTen {
+  height: 150px;
+  width: $candlesWidth;
+  background-color: $candlesLoss;
+  margin-left: 230px;
+  margin-top: -50px;
+}
+.candlesEleven {
+  height: 30px;
+  width: $candlesWidth;
+  background-color: $candlesLoss;
+  margin-left: 255px;
+  margin-top: -20px;
 }
