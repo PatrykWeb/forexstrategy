@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import "./styles/header/header.scss"
+import "./styles/middlesection/middlesection.scss"
 import './index.scss';
 import Main from './Main';
 import reportWebVitals from './reportWebVitals';

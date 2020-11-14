@@ -59,9 +59,6 @@ const HeaderTicker = () => {
                 </div>
 
             </header>
-            <section className={"backgroundMiddle"}>
-
-            </section>
         </div>
     )
 }
